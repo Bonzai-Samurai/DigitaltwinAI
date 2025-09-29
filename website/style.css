@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0d1b24;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+/* Navigation bar styles */
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.nav-brand {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #f5f5f5;
+}
+
+.nav-links a {
+  color: #f5f5f5;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: #cbd5e1;
+}
+
+.hero {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(1px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-overlay h1 {
+  font-size: 3rem;
+  margin: 0 0 1rem;
+  color: #f5f5f5;
+}
+
+.hero-overlay .quote {
+  font-style: italic;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #d1d5db;
+}
+
+.hero-overlay .quote-source {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #9ca3af;
+}
+
+main section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #f5f5f5;
+}
+
+section p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #d1d5db;
+}
+
+.cta {
+  text-align: center;
+  background-color: #12283a;
+  border-radius: 8px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 12px 30px;
+  background-color: #2563eb;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #1e40af;
+}
+
+/* Founder section */
+.founder {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.founder-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.founder-content img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.founder-content p {
+  flex: 1;
+  color: #d1d5db;
+  font-size: 1rem;
+}
+
+/* Tagline section */
+.tagline {
+  background-color: #0a192f;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.tagline-text {
+  font-size: 1.2rem;
+  color: #9ca3af;
+}
+
+/* Page header styling for roadmap page */
+.page-header {
+  padding: 100px 20px;
+  text-align: center;
+  background-color: #12283a;
+}
+
+.page-header h1 {
+  color: #f5f5f5;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.page-header p {
+  color: #d1d5db;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* Phase section styling on roadmap page */
+.phase {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.phase h2 {
+  font-size: 1.8rem;
+  color: #f5f5f5;
+  margin-bottom: 0.5rem;
+}
+
+.phase p {
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #0a192f;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .hero-overlay h1 {
+    font-size: 2.2rem;
+  }
+  .hero-overlay .quote {
+    font-size: 1rem;
+  }
+  main section {
+    padding: 40px 15px;
+  }
+
+  .founder-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .founder-content img {
+    width: 160px;
+    height: 160px;
+  }
+}
